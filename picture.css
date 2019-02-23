@@ -1,0 +1,8 @@
+.popup{text-align: center; }
+#imiddle_view_imageView1{float: left;}
+#imageshow2 { width:1200px; height:400px; display: table-cell; float: left; border:1px;} 
+#imageshow4 { width:1200px; height:400px; display: table-cell; float: left; border:1px;}
+.textimagedescri{width:200px; height:200px; display: table-cell; float: left; border:1px;}
+.textimagedescri{overflow-y:scroll; overflow-x:scroll;}
+#imageshow2 { margin-left:10px;overflow-y:scroll; overflow-x:scroll;} 
+#imageshow4 { margin-left:10px;overflow-y:scroll; overflow-x:scroll;} 
