@@ -1,8 +1,12 @@
-.popup{text-align: center; }
-#imiddle_view_imageView1{float: left;}
-#imageshow2 { width:1200px; height:400px; display: table-cell; float: left; border:1px;} 
-#imageshow4 { width:1200px; height:400px; display: table-cell; float: left; border:1px;}
+.popup{width:200px; height:80px;text-align: center; }
+#imiddle_view_imageView1{margin: auto; }
+#imageView1 {margin: auto; }
+#imageshow2 {  width:1200px; height:400px; display: table-cell; float: left; border:1px;} 
+#imagchange { width:400px; height:400px; margin: auto;  border:1px;}
+#imageshow3 { width:1000px; height:400px; display: table-cell; float: left; border:1px;}
 .textimagedescri{width:200px; height:200px; display: table-cell; float: left; border:1px;}
 .textimagedescri{overflow-y:scroll; overflow-x:scroll;}
+#controlbuttonleft{width:80px; height:100px;text-align: center; }
+#controlbuttonright{width:80px; height:100px;text-align: center; }
 #imageshow2 { margin-left:10px;overflow-y:scroll; overflow-x:scroll;} 
 #imageshow4 { margin-left:10px;overflow-y:scroll; overflow-x:scroll;} 
