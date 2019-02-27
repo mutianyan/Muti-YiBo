@@ -50,9 +50,17 @@ body {
 }
 
 
+@media (max-width: 823px){
+	#left_button, #right_button{
+	float: none; !important
+	}
+}
+
+
 #image_and_desc{
 	float: left;
 	padding: 20px;
+	background-color: yellow;
 }
 
 
@@ -60,18 +68,42 @@ body {
 	background-color: lightblue;
 }
 
+#image_div{
+	max-width: 400px;
+	background-color: pink;
+	margin: auto; // to the center
+}
+
 
 #image1{
-	height: 400px;
+	max-width: 100%;
+    height: auto;
+    width: auto\9;
 }
+
+
 
 
 /* view 2 */
+
+
+#imageView2{
+	width: 1200px;
+}
+
 #imageShow2{
-	width:1200px; 
-	height:400px;
+	max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: pink;
 	padding: 20px;
 }
+#div_container{
+	max-width: 100%;
+    height: auto;
+}
+
+
 
 #tip-content{
 	opacity: 0.5;

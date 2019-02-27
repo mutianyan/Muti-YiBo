@@ -31,26 +31,7 @@ var count = 1;
 const firstViewDiv = document.querySelector('#image_and_desc');
 function renderFirstView(doc){
 
-
-/*
-        <div id = "imageView1">
-
-
-                    <button class = "controlbutton" id = "left_button" >left</button>
-
-                    <div id = "image_and_desc">
-                            <img src="images/test.jpg" height="200" width="200" />
-                            <label class ="message" for = "inputmessage">Image Description </label><br />
-                            <input id = "inputmessage" placeholder=" The Description">
-                            <button id="add-comment"> Add Comment </button> 
-
-                    </div>
-
-                    <button class = "controlbutton" id = "right_button">right</button>
-
-         </div>
-*/
-
+    let image_div = document.createElement('div');
     let div1 = document.createElement('div');
     let image = document.createElement('IMG');
     let label_desc = document.createElement('label');
@@ -71,6 +52,7 @@ function renderFirstView(doc){
     label_artists.textContent= "Artists";
     label_year.textContent= "Year";
 
+    image_div.setAttribute("id", "image_div");
     comments.setAttribute("id", "comments");
     comments.setAttribute("placeholder", "The Description");
     com_btn.setAttribute("id", "add-comment");
@@ -85,7 +67,8 @@ function renderFirstView(doc){
     comments.placeholder = doc.data().comments;
 
     com_btn.appendChild(button_text);
-    firstViewDiv.appendChild(image);
+    image_div.appendChild(image);
+    firstViewDiv.appendChild(image_div);
     div1.appendChild(label_desc);
     div1.appendChild(desc);
     div1.appendChild(label_artists);
@@ -117,7 +100,22 @@ function renderFirstView(doc){
         count++;
         console.log('count is: ', count);
         //refresh();
-        document.location.reload(true);
+        //document.location.reload(true);
+
+    // db.collection('pictures').where('pic-id', '==', count).get().then((snapshot) => {
+    // //console.log(snapshot.docs);
+
+    // // get the data of the doc
+    // snapshot.docs.forEach(doc => {
+    //     //console.log(doc.data)
+    //     renderFirstView(doc);
+    // })
+    // })
+
+
+
+
+
     })
 
     // click left button
