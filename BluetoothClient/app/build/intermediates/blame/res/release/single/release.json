@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/Users/chenyinbo/AndroidStudioProjects/BluetoothClient/app/build/intermediates/res/merged/release/drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/chenyinbo/AndroidStudioProjects/BluetoothClient/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/chenyinbo/AndroidStudioProjects/BluetoothClient/app/build/intermediates/res/merged/release/drawable-hdpi_msgbox_send.9.png.flat",
+        "source": "/Users/chenyinbo/AndroidStudioProjects/BluetoothClient/app/src/main/res/drawable-hdpi/msgbox_send.9.png"
+    },
+    {
+        "merged": "/Users/chenyinbo/AndroidStudioProjects/BluetoothClient/app/build/intermediates/res/merged/release/menu_main.xml.flat",
+        "source": "/Users/chenyinbo/AndroidStudioProjects/BluetoothClient/app/src/main/res/menu/main.xml"
+    },
+    {
+        "merged": "/Users/chenyinbo/AndroidStudioProjects/BluetoothClient/app/build/intermediates/res/merged/release/drawable-hdpi_ic_launcher.png.flat",
+        "source": "/Users/chenyinbo/AndroidStudioProjects/BluetoothClient/app/src/main/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/chenyinbo/AndroidStudioProjects/BluetoothClient/app/build/intermediates/res/merged/release/layout_activity_main.xml.flat",
+        "source": "/Users/chenyinbo/AndroidStudioProjects/BluetoothClient/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/chenyinbo/AndroidStudioProjects/BluetoothClient/app/build/intermediates/res/merged/release/drawable-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/chenyinbo/AndroidStudioProjects/BluetoothClient/app/src/main/res/drawable-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/chenyinbo/AndroidStudioProjects/BluetoothClient/app/build/intermediates/res/merged/release/drawable-mdpi_ic_launcher.png.flat",
+        "source": "/Users/chenyinbo/AndroidStudioProjects/BluetoothClient/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/chenyinbo/AndroidStudioProjects/BluetoothClient/app/build/intermediates/res/merged/release/layout_list_item.xml.flat",
+        "source": "/Users/chenyinbo/AndroidStudioProjects/BluetoothClient/app/src/main/res/layout/list_item.xml"
+    },
+    {
+        "merged": "/Users/chenyinbo/AndroidStudioProjects/BluetoothClient/app/build/intermediates/res/merged/release/drawable-hdpi_msgbox_rec.9.png.flat",
+        "source": "/Users/chenyinbo/AndroidStudioProjects/BluetoothClient/app/src/main/res/drawable-hdpi/msgbox_rec.9.png"
+    }
+]

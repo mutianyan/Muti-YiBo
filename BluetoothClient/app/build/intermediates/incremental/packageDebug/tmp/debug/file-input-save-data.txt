@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Sun Feb 24 14:55:38 MST 2019
+0.baseType=DIRECTORY
+0.base=/Users/chenyinbo/AndroidStudioProjects/BluetoothClient/app/build/intermediates/dex/debug/mergeDexDebug/out
+0.path=classes.dex
+0.set=DEX
+count=1

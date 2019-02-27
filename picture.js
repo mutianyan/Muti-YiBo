@@ -25,6 +25,24 @@ $(document).ready(function() {
     $("#imageView2").hide();
  }); 
 
+ //button shortkey function
+document.onkeydown= function (e) {
+    var theEvent = window.event || e; 
+    var code = theEvent.keyCode || theEvent.which; 
+    if (code == 37) { 
+        $("#left_button").click(); 
+    }else if(code == 39){
+        $("#right_button").click();
+    }else if(code == 49){
+        $("#firstMethod").click();
+    }else if(code == 50){
+        $("#secondMethod").click();
+    }else if(code == 51){
+        $("#thirdMethod").click();
+    }
+    
+    }
+
 var count = 1;
 
 // first view

@@ -1,0 +1,62 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/chenyinbo/AndroidStudioProjects/BluetoothClient/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/Users/chenyinbo/AndroidStudioProjects/BluetoothClient/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "4,3,7,5,6,8",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "109,56,256,162,215,300",
+                        "endColumns": "52,52,43,52,40,37",
+                        "endOffsets": "157,104,295,210,251,333"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "169,222,275,319,372,413",
+                        "endColumns": "52,52,43,52,40,37",
+                        "endOffsets": "217,270,314,367,408,446"
+                    }
+                },
+                {
+                    "source": "/Users/chenyinbo/AndroidStudioProjects/BluetoothClient/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "6,15",
+                        "startColumns": "4,4",
+                        "startOffsets": "186,510",
+                        "endLines": "12,17",
+                        "endColumns": "12,12",
+                        "endOffsets": "472,665"
+                    },
+                    "to": {
+                        "startLines": "10,17",
+                        "startColumns": "4,4",
+                        "startOffsets": "451,742",
+                        "endLines": "16,19",
+                        "endColumns": "12,12",
+                        "endOffsets": "737,897"
+                    }
+                },
+                {
+                    "source": "/Users/chenyinbo/AndroidStudioProjects/BluetoothClient/app/src/main/res/values/dimens.xml",
+                    "from": {
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "89,147",
+                        "endColumns": "57,55",
+                        "endOffsets": "142,198"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,113",
+                        "endColumns": "57,55",
+                        "endOffsets": "108,164"
+                    }
+                }
+            ]
+        }
+    ]
+}
