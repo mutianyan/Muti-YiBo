@@ -1,22 +1,23 @@
 <html>
     <head>
         <title>picture</title>
-        <style>
-        
-        </style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+        <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
             <script type = "text/javascript" src = "picture.js"></script>
             <link rel = "stylesheet" href = "picture.css">
     
     </head>
     <body>
-        <div align="center" id ="tab_bar" >
-            <button class = "popup" id = "firstMethod" >firstMethod</button>
-            <button class = "popup" id = "secondMethod" >secondMethod</button>
-            <button class = "popup" id = "thirdMethod" >thirdMethod</button>
-
+        <div id ="tab_bar" >
+            <div id= "tab">
+                <button class = "popup" id = "firstMethod" >First View</button>
+                <button class = "popup" id = "secondMethod" >Second View</button>
+                <button class = "popup" id = "thirdMethod" >Third View</button>
+            </div>
         </div>
 
+<<<<<<< Updated upstream
         <div  id = "imageView1">
             <div  id= "middle_view_imageView1">
 
@@ -24,31 +25,49 @@
             
                     <div id = "imageshow" >
                             <img id = "imagchange"src="images/imag1.jpg" />
+=======
+        <div id = "imageView1">
+
+
+                    <button class = "controlbutton" id = "left_button" >left</button>
+
+                    <div id = "image_and_desc">
+                           <!--  <img src="images/test.jpg" height="200" width="200" />
+                            <label class ="message" for = "inputmessage">Image Description </label><br />
+                            <input id = "inputmessage" placeholder=" The Description"> -->
+                            <!-- <button id="add-comment"> Add Comment </button>  --> 
+
+>>>>>>> Stashed changes
                     </div>
+
+                    <button class = "controlbutton" id = "right_button">right</button>
+
+         </div>
+
+
         
-                    <button class = "controlbutton" id = "controlbuttonright">right</button>
-            </div>
-            
-            
-
-            <div id = "inputtext">
-                    <form>
-                            <label class ="message" for = "inputmessage">Image Description </label><br>
-                            <input id = "inputmessage" placeholder=" Text your own description">
-                    </form>
-
-            </div>
         </div>
 
         <div align="center" id = "imageView2">
 
+<<<<<<< Updated upstream
               <div id = "imageshow2">
                 
              </div>
+=======
+            <div id = "imageshow2">
+
+            </div>
+>>>>>>> Stashed changes
+
+
 
         </div>
 
-        <div align="center" id = "imageView3">
+
+<!-- view 3  -->
+
+<!--         <div align="center" id = "imageView3">
 
                 <div id = "imageshow3">
                     
@@ -60,9 +79,48 @@
                        
                     </div>
 
+        </div> -->
+
+
+
+        <div id = "imageView3">
+<!--                     <div id = "pic_card" >
+                            <img src="images/test.jpg" height="200" width="200" />
+                                <label for = "pic-desc">Image Description </label><br />
+                                <p id="pic-desc"> Here goes the description of the image</p>
+
+                                <input id = "inputmessage" placeholder="Insert Comment">
+                                <button id="add-comment"> Add Comment </button> 
+                    </div> -->
+
+<!-- 
+            <input type="text" id="add_comment" /> -->
+            <ul id="pic_list"> </ul>
+
+            
         </div>
 
-        
 
+
+
+
+
+<!-- config of firebase -->
+
+        
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyA3X11SIbM_UCY-2jddCKBiaX5Cw4GLjBE",
+        authDomain: "muti-yibo.firebaseapp.com",
+        databaseURL: "https://muti-yibo.firebaseio.com",
+        projectId: "muti-yibo",
+        storageBucket: "muti-yibo.appspot.com",
+        messagingSenderId: "748553463699"
+      };
+      firebase.initializeApp(config);
+      const db = firebase.firestore();
+      // db.settings({ timestampsInSnapshots: true});
+    </script>
     </body>
 </html>
