@@ -72,6 +72,7 @@ function renderFirstView(doc){
 
     image_div.setAttribute("id", "image_div");
     comments.setAttribute("id", "comments");
+    div1.setAttribute("id", "div1");
     comments.setAttribute("placeholder", "The Description");
     com_btn.setAttribute("id", "add-comment");
     button_text = document.createTextNode('Add Comment');
@@ -116,8 +117,14 @@ function renderFirstView(doc){
     right_btn.addEventListener('click', (e) => {
         e.stopPropagation();
         count++;
+        console.log('hello');
         console.log('count is: ', count);
-        //refresh();
+        // remove the previous component
+        var element = document.getElementById('div1');
+        element.parentNode.removeChild(element);
+        var element2 = document.getElementById('image_div');
+        element2.parentNode.removeChild(element2);
+        render();
         //document.location.reload(true);
 
     // db.collection('pictures').where('pic-id', '==', count).get().then((snapshot) => {
@@ -142,7 +149,12 @@ function renderFirstView(doc){
         e.stopPropagation();
         count--;
         console.log('count is: ', count);
-        //refresh();
+        var element = document.getElementById('div1');
+        console.log(element.parentNode);
+        element.parentNode.removeChild(element);
+        var element2 = document.getElementById('image_div');
+        element2.parentNode.removeChild(element2);
+        render();
 
     })
 
@@ -163,6 +175,19 @@ db.collection('pictures').where('pic-id', '==', count).get().then((snapshot) => 
     })
 })
 
+
+
+function render(){
+db.collection('pictures').where('pic-id', '==', count).get().then((snapshot) => {
+    //console.log(snapshot.docs);
+
+    // get the data of the doc
+    snapshot.docs.forEach(doc => {
+        //console.log(doc.data)
+        renderFirstView(doc);
+    })
+})
+}
 // approach 1: query the object collection from firebase, then loop to get the next one when the button is clicked
 
 // approach 2: get the entire collection, then store into array, finally do array access
@@ -199,7 +224,7 @@ function renderSecondView(doc){
         var desc = doc.data().desc;
 
         // create a span 
-        let text = document.createElement('span');
+        let text = document.createElement('div');
         text.setAttribute("id", "tip-content");
 
         text.textContent = desc;
