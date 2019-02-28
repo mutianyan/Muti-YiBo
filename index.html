@@ -1,34 +1,65 @@
 <html>
     <head>
+        <title>picture</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
         <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
-        <link rel="stylesheet" href="styles.css">
+            <script type = "text/javascript" src = "picture.js"></script>
+            <link rel = "stylesheet" href = "picture.css">
+    
     </head>
     <body>
+        <div id ="tab_bar" >
+            <div id= "tab">
+                <button class = "popup" id = "firstMethod" >First View</button>
+                <button class = "popup" id = "secondMethod" >Second View</button>
+                <button class = "popup" id = "thirdMethod" >Third View</button>
+            </div>
+        </div>
 
-        <h1>Cloud Cafe</h1>
-
-        <div class="content">
-
-<!--             <form id="add-cafe-form">
-                <input type="text" name="name" placeholder="Cafe Name">
-                <input type="text" name ="city" placeholder="Cafe City">
-                <button>Add Cafe</button>
-            </form> -->
+        <div id = "imageView1">
 
 
-<!-- 
-            <form id="add-comment-form">
-                <input type="text" name="commets" placeholder="Add Comments">
-                <button>Add Comment</button>
-            </form> -->
+                    <button class = "controlbutton" id = "left_button" >left</button>
 
-            <!-- <input type="text" id="add_comment" /> -->
-            <ul id="pic-list"> </ul>
+                    <div id = "image_and_desc">
+
+                    </div>
+
+                    <button class = "controlbutton" id = "right_button">right</button>
+
+         </div>
+
+
+        
+        </div>
+
+        <div align="center" id = "imageView2">
+
+            <div id = "imageshow2">
+
+            </div>
+
+
 
         </div>
 
 
+<!-- view 3  -->
+
+        <div id = "imageView3">
+            <ul id="pic_list"> </ul>
+
+        </div>
+
+
+
+
+
+
+<!-- config of firebase -->
+
+        
     <script>
       // Initialize Firebase
       var config = {
@@ -43,7 +74,5 @@
       const db = firebase.firestore();
       // db.settings({ timestampsInSnapshots: true});
     </script>
-
-        <script src="app.js"></script>
     </body>
 </html>
